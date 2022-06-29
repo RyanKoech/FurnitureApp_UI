@@ -3,8 +3,31 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+<!--    <color name="teal_200">#FF03DAC5</color>-->
+<!--    <color name="teal_700">#FF018786</color>-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="teal_50">#e0f4fb</color>
+    <color name="teal_100">#b2e3f3</color>
+    <color name="teal_200">#81d1ea</color>
+    <color name="teal_300">#53bfde</color>
+    <color name="teal_400">#38b3d5</color>
+    <color name="teal_500">#2ea7cb</color>
+    <color name="teal_600">#2898b8</color>
+    <color name="teal_700">#21849e</color>
+    <color name="teal_800">#1b7185</color>
+    <color name="teal_900">#114f5a</color>
+
+    <color name="black_50">#f7f8fb</color>
+    <color name="black_100">#eff0f3</color>
+    <color name="black_200">#e5e6e9</color>
+    <color name="black_300">#d4d5d7</color>
+    <color name="black_400">#afb0b3</color>
+    <color name="black_500">#8f9093</color>
+    <color name="black_600">#67686b</color>
+    <color name="black_700">#545557</color>
+    <color name="black_800">#363739</color>
+    <color name="black_900">#161719</color>
+
 </resources>
