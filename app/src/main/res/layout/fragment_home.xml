@@ -3,12 +3,271 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Button" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_marginHorizontal="24dp">
+
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modern Furniture"
+                android:textSize="25sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="900"
+                android:textColor="@color/teal_900"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:targetApi="p" />
+
+            <TextView
+                android:id="@+id/home_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="for your home"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/teal_900"
+                app:layout_constraintTop_toBottomOf="@id/home_title"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/image_user"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:clipToPadding="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/home_subtitle"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp"
+                    android:clipToPadding="false">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Armchair"
+                        app:icon="@drawable/icon_seat"
+                        style="@style/OptionsButton"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Double bed"
+                        app:icon="@drawable/icon_bed"
+                        style="@style/OptionsButton"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cupboard"
+                        app:icon="@drawable/icon_cupboard"
+                        style="@style/OptionsButton"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Desks"
+                        app:icon="@drawable/icon_desk"
+                        style="@style/OptionsButton"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Seller"
+                    android:textFontWeight="600"
+                    android:textSize="19sp"
+                    android:textColor="@color/teal_900"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See all"
+                    android:textFontWeight="600"
+                    android:textColor="#83a1ab"/>
+
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/armchair_9"
+                            android:elevation="20dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="18dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="15dp"
+                                android:paddingBottom="10dp"
+                                >
+
+                                <View
+                                    android:id="@+id/view"
+                                    android:layout_width="120dp"
+                                    android:layout_height="110dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"/>
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_extrabold"
+                                    android:text="Armchair"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/teal_900"
+                                    android:textFontWeight="900"
+                                    android:textStyle="bold"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/view"/>
+
+
+                                <ImageView
+                                    android:id="@+id/ratingView"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/icon_rate"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/textView"
+                                    app:tint="#f7ca07" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:fontFamily="@font/montserrat_extrabold"
+                                    android:text="4.7"
+                                    android:textFontWeight="900"
+                                    android:textSize="12sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/ratingView"
+                                    app:layout_constraintLeft_toRightOf="@id/ratingView"
+                                    app:layout_constraintTop_toTopOf="@id/ratingView" />
+
+                                <TextView
+                                    android:id="@+id/priceView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:text="$150"
+                                    android:textColor="#dbbf41"
+                                    android:textFontWeight="700"
+                                    android:textSize="15sp"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/ratingView" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/teal_900"
+                                    android:minWidth="0dp"
+                                    android:minHeight="0dp"
+                                    android:padding="0.75dp"
+                                    app:cornerRadius="100dp"
+                                    app:icon="@drawable/icon_add"
+                                    app:iconPadding="0dp"
+                                    app:iconSize="22dp"
+                                    app:layout_constraintBottom_toBottomOf="@id/priceView"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/priceView" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </FrameLayout>
