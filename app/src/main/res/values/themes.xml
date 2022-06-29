@@ -1,7 +1,37 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FurnitureApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Base.FurnitureApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="buttonStyle">@style/OptionsButton</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="Theme.MaterialComponents">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="OptionsButton" parent="Theme.MaterialComponents">
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:elevation">15dp</item>
+        <item name="android:translationZ">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="iconSize">20dp</item>
+        <item name="backgroundTint">@color/teal_900</item>
+        <item name="iconGravity">start</item>
+        <item name="cornerRadius">13dp</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <style name="Theme.FurnitureApp" parent="Theme.Base.FurnitureApp">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
