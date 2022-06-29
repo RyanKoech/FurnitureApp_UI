@@ -153,8 +153,8 @@
 
                         <ImageView
                             android:id="@+id/best_seller_image_1"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_width="140dp"
+                            android:layout_height="145dp"
                             android:scaleType="fitCenter"
                             android:src="@drawable/armchair_1"
                             android:elevation="20dp"
@@ -166,7 +166,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:cardElevation="15dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="30dp"
                             app:cardCornerRadius="18dp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintLeft_toLeftOf="parent"
@@ -181,8 +181,8 @@
 
                                 <View
                                     android:id="@+id/best_seller_view_1"
-                                    android:layout_width="120dp"
-                                    android:layout_height="110dp"
+                                    android:layout_width="140dp"
+                                    android:layout_height="130dp"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintRight_toRightOf="parent"/>
@@ -193,7 +193,7 @@
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/montserrat_extrabold"
                                     android:text="Armchair"
-                                    android:textSize="16sp"
+                                    android:textSize="18sp"
                                     android:textColor="@color/teal_900"
                                     android:textFontWeight="900"
                                     android:textStyle="bold"
@@ -203,11 +203,12 @@
 
                                 <ImageView
                                     android:id="@+id/best_seller_star_1"
-                                    android:layout_width="20dp"
-                                    android:layout_height="20dp"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
                                     android:src="@drawable/icon_rate"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintTop_toBottomOf="@id/best_seller_name_1"
+                                    android:layout_marginTop="2dp"
                                     app:tint="#f7ca07" />
 
                                 <TextView
@@ -217,7 +218,7 @@
                                     android:fontFamily="@font/montserrat_extrabold"
                                     android:text="4.7"
                                     android:textFontWeight="900"
-                                    android:textSize="12sp"
+                                    android:textSize="13sp"
                                     app:layout_constraintBottom_toBottomOf="@id/best_seller_star_1"
                                     app:layout_constraintLeft_toRightOf="@id/best_seller_star_1"
                                     app:layout_constraintTop_toTopOf="@id/best_seller_star_1" />
@@ -226,14 +227,14 @@
                                     android:id="@+id/best_seller_price_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="6dp"
+                                    android:layout_marginTop="11dp"
                                     android:fontFamily="@font/montserrat_semibold"
                                     android:text="$150"
                                     android:textColor="#dbbf41"
                                     android:textFontWeight="700"
-                                    android:textSize="15sp"
+                                    android:textSize="16sp"
                                     app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@id/best_seller_star_1" />
+                                    app:layout_constraintTop_toBottomOf="@id/best_seller_star_1"/>
 
                                 <com.google.android.material.button.MaterialButton
                                     android:layout_width="wrap_content"
@@ -241,7 +242,7 @@
                                     android:backgroundTint="@color/teal_900"
                                     android:minWidth="0dp"
                                     android:minHeight="0dp"
-                                    android:padding="0.75dp"
+                                    android:padding="1dp"
                                     app:cornerRadius="100dp"
                                     app:icon="@drawable/icon_add"
                                     app:iconPadding="0dp"
