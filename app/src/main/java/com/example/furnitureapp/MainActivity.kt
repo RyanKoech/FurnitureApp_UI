@@ -3,10 +3,10 @@ package com.example.furnitureapp
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.Window
-import android.view.WindowInsets
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
+
         requestWindowFeature(Window.FEATURE_NO_TITLE)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         WindowInsetsControllerCompat(window, binding.root).let { controller ->
 
             controller.hide(WindowInsetsCompat.Type.systemBars())
-            controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_SWIPE
+            controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
 
         }
 
