@@ -117,7 +117,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Best Seller"
+                    android:text="Best seller"
                     android:textFontWeight="600"
                     android:textSize="19sp"
                     android:textColor="@color/teal_900"/>
