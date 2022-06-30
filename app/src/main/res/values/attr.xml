@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="AppStyles">
+
+        <attr name="mainTextColor" format="color"/>
+        <attr name="appBackgroundColor" format="color"/>
+        <attr name="appContainerColor" format="color"/>
+        <attr name="transparentBtnTextColor" format="color"/>
+        <attr name="bottomNavColor" format="color"/>
+        <attr name="ratingTextColor" format="color"/>
+        <attr name="bottomNavItemsColor" format="color"/>
+
+    </declare-styleable>
+    
+</resources>
