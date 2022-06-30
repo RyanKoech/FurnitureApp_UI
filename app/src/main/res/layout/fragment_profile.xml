@@ -3,5 +3,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="?attr/appBackgroundColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image_bg"
+        android:scaleType="centerCrop"
+        android:alpha="0.6"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/appBackgroundColor"
+            android:translationY="25dp"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingHorizontal="35dp"
+                android:paddingBottom="275dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/image_user"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mali Oluwa"
+                    android:textFontWeight="900"
+                    android:textColor="?attr/mainTextColor"
+                    app:layout_constraintTop_toBottomOf="@id/profile_image"
+                    app:layout_constraintStart_toStartOf="@id/profile_image"
+                    app:layout_constraintEnd_toEndOf="@id/profile_image"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mailoluwa3@gmail.com"
+                    android:textFontWeight="900"
+                    android:textSize="12sp"
+                    android:textColor="?attr/transparentBtnTextColor"
+                    app:layout_constraintTop_toBottomOf="@id/profile_name"
+                    app:layout_constraintStart_toStartOf="@id/profile_image"
+                    app:layout_constraintEnd_toEndOf="@id/profile_image"
+                    android:layout_marginTop="2dp"/>
+
+                <View
+                    android:id="@+id/profile_divider"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:background="?attr/transparentBtnTextColor"
+                    app:layout_constraintTop_toBottomOf="@id/profile_email"
+                    app:layout_constraintStart_toStartOf="@id/profile_image"
+                    app:layout_constraintEnd_toEndOf="@id/profile_image"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/dark_mode_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Mode"
+                    android:textColor="?attr/mainTextColor"
+                    app:layout_constraintTop_toBottomOf="@id/profile_divider"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="25dp"
+                    />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/dark_mode_label"
+                    app:layout_constraintBottom_toBottomOf="@id/dark_mode_label"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </FrameLayout>
+
+
 </FrameLayout>
