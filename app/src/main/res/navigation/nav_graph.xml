@@ -19,4 +19,9 @@
         android:name="com.example.furnitureapp.ItemFragment"
         android:label="fragment_item"
         tools:layout="@layout/fragment_item" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.furnitureapp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
