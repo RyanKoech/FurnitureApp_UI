@@ -95,6 +95,7 @@
                     />
 
                 <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/toggle_mode_switch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toTopOf="@id/dark_mode_label"
