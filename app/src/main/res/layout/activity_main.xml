@@ -24,5 +24,28 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/bottom_menu"/>
+        android:paddingTop="17dp"
+        android:paddingBottom="20dp"
+        android:background="#f7f8fb"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@drawable/bottom_nav_item_colour_selected"
+        app:elevation="20dp"
+        app:itemTextAppearanceActive="@style/Bottom_Menu_Text"
+        app:itemTextColor="@drawable/bottom_nav_item_colour_selected"
+        app:menu="@menu/bottom_menu">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:backgroundTint="@color/teal_900"
+            android:src="@drawable/icon_camera"
+            app:fabCustomSize="47dp"
+            app:tint="#f7f8fb"
+            app:borderWidth="0dp"
+            app:maxImageSize="30dp"
+            app:elevation="0dp"/>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </LinearLayout>
