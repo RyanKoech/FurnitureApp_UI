@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/homeFragment"
         android:title="●"
         android:icon="@drawable/icon_home"
         android:contentDescription="Home"/>
@@ -22,6 +23,7 @@
         android:contentDescription="Cart"/>
 
     <item
+        android:id="@+id/profileFragment"
         android:title="●"
         android:icon="@drawable/icon_profile"
         android:contentDescription="Profile"/>
