@@ -2,22 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="Home"
-        android:icon="@drawable/icon_home"/>
+        android:title="●"
+        android:icon="@drawable/icon_home"
+        android:contentDescription="Home"/>
 
     <item
-        android:title="Search"
-        android:icon="@drawable/icon_search"/>
+        android:title="●"
+        android:icon="@drawable/icon_search"
+        android:contentDescription="Search"/>
 
     <item
-        android:title="Camera"
-        android:icon="@drawable/icon_camera"/>
+        android:title="●"
+        android:icon="@drawable/icon_camera"
+        android:contentDescription="Camera"/>
 
     <item
-        android:title="Cart"
-        android:icon="@drawable/icon_cart"/>
+        android:title="●"
+        android:icon="@drawable/icon_cart"
+        android:contentDescription="Cart"/>
 
     <item
-        android:title="Profile"
-        android:icon="@drawable/icon_profile"/>
+        android:title="●"
+        android:icon="@drawable/icon_profile"
+        android:contentDescription="Profile"/>
 </menu>
