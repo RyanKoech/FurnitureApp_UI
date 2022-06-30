@@ -7,12 +7,15 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.furnitureapp.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
+        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
 
         requestWindowFeature(Window.FEATURE_NO_TITLE)
 
@@ -44,6 +47,10 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.main_fragment) as NavHostFragment
         navController = navHostFragment.navController
+
+        val bottomNavigationView = binding.bottomNavigation
+
+        bottomNavigationView.setupWithNavController(navController)
 
         setContentView(binding.root)
 
