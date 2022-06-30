@@ -232,6 +232,7 @@
                                             android:text="4.7"
                                             android:textFontWeight="900"
                                             android:textSize="13sp"
+                                            android:textColor="@color/teal_900"
                                             app:layout_constraintBottom_toBottomOf="@id/best_seller_star_1"
                                             app:layout_constraintLeft_toRightOf="@id/best_seller_star_1"
                                             app:layout_constraintTop_toTopOf="@id/best_seller_star_1" />
@@ -390,6 +391,7 @@
                                             android:text="4.7"
                                             android:textFontWeight="900"
                                             android:textSize="12sp"
+                                            android:textColor="@color/teal_900"
                                             app:layout_constraintBottom_toBottomOf="@id/ratingView"
                                             app:layout_constraintLeft_toRightOf="@id/ratingView"
                                             app:layout_constraintTop_toTopOf="@id/ratingView" />
