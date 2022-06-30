@@ -17,6 +17,7 @@
     <color name="teal_600">#2898b8</color>
     <color name="teal_700">#21849e</color>
     <color name="teal_800">#1b7185</color>
+    <color name="teal_850">#15626f</color>
     <color name="teal_900">#114f5a</color>
 
     <color name="black_50">#f7f8fb</color>
@@ -29,5 +30,7 @@
     <color name="black_700">#545557</color>
     <color name="black_800">#363739</color>
     <color name="black_900">#161719</color>
+    <color name="black_1000">#131313</color>
+    <color name="black_1100">#0d0d0d</color>
 
 </resources>
