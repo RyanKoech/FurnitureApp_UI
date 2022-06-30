@@ -15,17 +15,25 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.furnitureapp.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
     private lateinit var binding : ActivityMainBinding
+    internal lateinit var sharedPref: SharedPref
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        sharedPref = SharedPref(this)
 
-        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+        if(sharedPref.getNightModeState()!!){
+
+            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+        }else {
+
+            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
+        }
+
+        super.onCreate(savedInstanceState)
 
         requestWindowFeature(Window.FEATURE_NO_TITLE)
 
