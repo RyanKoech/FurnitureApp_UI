@@ -41,6 +41,11 @@
         <item name="android:textColor">@color/teal_900</item>
     </style>
 
+    <style name="Bottom_Menu_Text" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
     <style name="Theme.FurnitureApp" parent="Theme.Base.FurnitureApp">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
