@@ -8,6 +8,7 @@
         <item name="android:clipChildren">false</item>
         <item name="android:clipToPadding">false</item>
         <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+        <item name="android:textColor">?attr/mainTextColor</item>
 
     </style>
 
@@ -36,9 +37,9 @@
     </style>
 
     <style name="OptionsButton_Inactive" parent="OptionsButton">
-        <item name="backgroundTint">@color/white</item>
-        <item name="iconTint">@color/teal_900</item>
-        <item name="android:textColor">@color/teal_900</item>
+        <item name="backgroundTint">?attr/appContainerColor</item>
+        <item name="iconTint">?attr/mainTextColor</item>
+        <item name="android:textColor">?attr/mainTextColor</item>
     </style>
 
     <style name="Bottom_Menu_Text" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
@@ -58,5 +59,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="mainTextColor">@color/teal_900</item>
+        <item name="appBackgroundColor">@color/black_50</item>
+        <item name="appContainerColor">@color/white</item>
+        <item name="bottomNavColor">#f7f8fb</item>
+        <item name="transparentBtnTextColor">#83a1ab</item>
+        <item name="ratingTextColor">@color/teal_900</item>
+        <item name="bottomNavItemsColor">@color/teal_900</item>
     </style>
 </resources>
