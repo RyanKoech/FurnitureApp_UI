@@ -24,8 +24,8 @@
 
 ### Dark
 <img src="screenshots/dark_sample.png" alt="Dark Mode screen"/>
-## Built With
 
+## Built With
 - Kotlin
 
 ## App Screenshots
