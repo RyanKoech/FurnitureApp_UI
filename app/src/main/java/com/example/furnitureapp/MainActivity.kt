@@ -45,13 +45,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-        WindowInsetsControllerCompat(window, binding.root).let { controller ->
-
-            controller.hide(WindowInsetsCompat.Type.systemBars())
-            controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-
-        }
-
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.main_fragment) as NavHostFragment
         navController = navHostFragment.navController
@@ -61,6 +54,13 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
 
         setContentView(binding.root)
+
+        WindowInsetsControllerCompat(window, binding.root).let { controller ->
+
+            controller.hide(WindowInsetsCompat.Type.systemBars())
+            controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+
+        }
 
     }
 }
