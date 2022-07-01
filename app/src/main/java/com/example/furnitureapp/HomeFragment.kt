@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
         val view = binding.root
 
         binding.bestSellerButton.setOnClickListener(::navigateToItemFragment)
-        binding.popularItemSButton.setOnClickListener(::navigateToItemFragment)
+        binding.popularItemButton1.setOnClickListener(::navigateToItemFragment)
         (activity as MainActivity).binding.bottomNavigation.visibility = View.VISIBLE
 
         return view

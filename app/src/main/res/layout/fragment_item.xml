@@ -59,7 +59,6 @@
            android:paddingHorizontal="24dp">
 
            <TextView
-               android:id="@+id/best_seller_price_1"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:fontFamily="@font/montserrat_semibold"
