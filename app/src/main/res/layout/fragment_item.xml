@@ -3,12 +3,221 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ItemFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:paddingTop="40dp">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="center">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Furni"
+               android:textSize="25sp"
+               android:fontFamily="@font/montserrat_regular"
+               android:textFontWeight="900"
+               android:textColor="@color/teal_900"
+               android:layout_marginLeft="13dp"/>
+
+           <View
+               android:layout_width="10dp"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="House"
+               android:textSize="25sp"
+               android:fontFamily="@font/montserrat_regular"
+               android:textColor="@color/white"
+               android:textFontWeight="900"/>
+
+       </LinearLayout>
+
+       <ImageView
+           android:layout_width="300dp"
+           android:layout_height="300dp"
+           android:scaleType="centerCrop"
+           android:src="@drawable/armchair_6"
+           android:layout_gravity="center"
+           android:layout_marginTop="40dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           android:paddingHorizontal="24dp">
+
+           <TextView
+               android:id="@+id/best_seller_price_1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/montserrat_semibold"
+               android:text="$150"
+               android:textColor="#dbbf41"
+               android:textFontWeight="700"
+               android:textSize="16sp"
+               android:layout_marginRight="30dp"/>
+
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/teal_900"
+               android:minWidth="0dp"
+               android:minHeight="0dp"
+               android:padding="1.5dp"
+               app:cornerRadius="100dp"
+               app:icon="@drawable/icon_add"
+               app:iconPadding="0dp"
+               app:iconSize="22dp"
+               app:iconTint="@color/white"/>
+
+           <View
+               android:layout_width="fill_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"/>
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:layout_gravity="center"
+               android:layout_marginRight="10dp"
+               android:backgroundTint="@color/teal_900"/>
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:layout_gravity="center"
+               android:layout_marginRight="10dp"
+               android:backgroundTint="@color/black_300"/>
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="8dp"
+               android:layout_height="8dp"
+               android:layout_gravity="center"
+               android:backgroundTint="@color/black_300"/>
+
+       </LinearLayout>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fillViewport="true"
+           android:scrollbars="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:paddingHorizontal="24dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="18sp"
+                   android:text="Turn Your House"
+                   android:layout_marginTop="25dp"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Into Your Dream Home"
+                   android:textSize="23sp"
+                   android:fontFamily="@font/montserrat_regular"
+                   android:textFontWeight="900"
+                   android:layout_marginTop="3dp"/>
+
+               <TextView
+                   android:layout_width="250dp"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black_500"
+                   android:textSize="12sp"
+                   android:fontFamily="@font/montserrat_semibold"
+                   android:textFontWeight="900"
+                   android:text="Surround yourself with modern furniture and enjoy good quality of life"
+                   android:layout_marginTop="20dp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="fill_parent"
+                   android:layout_weight="1"/>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginBottom="50dp">
+
+                   <com.google.android.material.button.MaterialButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Skip"
+                       android:textColor="?attr/mainTextColor"
+                       style="@style/OptionsButton_Active"
+                       app:cornerRadius="0dp"
+                       android:elevation="0dp"
+                       android:translationZ="0dp"
+                       android:paddingLeft="0dp"
+                       android:paddingRight="25dp"
+                       android:minWidth="0dp"
+                       android:backgroundTint="@android:color/transparent"/>
+
+                   <View
+                       android:layout_width="fill_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"/>
+
+                   <com.google.android.material.button.MaterialButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Next"
+                       app:icon="@drawable/icon_arrow_forward"
+                       app:iconGravity="end"
+                       style="@style/OptionsButton_Active"
+                       app:cornerRadius="50dp"
+                       android:paddingHorizontal="20dp"
+                       android:layout_marginRight="0dp"
+                       android:elevation="0dp"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </ScrollView>
+
+   </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="-1dp">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="fill_parent"
+            android:layout_height="465dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_650"
+            app:cardElevation="0dp"
+            style="@style/CustomCardViewStyle"/>
+
+    </LinearLayout>
 
 </FrameLayout>
