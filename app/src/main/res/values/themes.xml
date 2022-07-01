@@ -47,6 +47,18 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">40dp</item>
+    </style>
+
     <style name="Theme.FurnitureApp" parent="Theme.Base.FurnitureApp">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
