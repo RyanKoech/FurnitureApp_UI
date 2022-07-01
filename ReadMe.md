@@ -58,9 +58,9 @@ Give a ⭐ if you like this project!
 
 ## Acknowledgments
 
--[Esther Inontah](https://www.behance.net/estherinontah_), the designer of the UI samples.<br/>
--[Freepik](https://www.freepik.com/), user profile image.<br/>
--[pngitem](https://www.pngitem.com), armchair images.<br/>
+- [Esther Inontah](https://www.behance.net/estherinontah_), the designer of the UI samples.<br/>
+- [Freepik](https://www.freepik.com/), user profile image.<br/>
+- [pngitem](https://www.pngitem.com), armchair images.<br/>
 
 ## 📝 License
 
