@@ -19,7 +19,7 @@ import com.example.furnitureapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
-    private lateinit var binding : ActivityMainBinding
+    internal lateinit var binding : ActivityMainBinding
     internal lateinit var sharedPref: SharedPref
 
     override fun onCreate(savedInstanceState: Bundle?) {

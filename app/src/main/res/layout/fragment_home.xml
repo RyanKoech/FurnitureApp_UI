@@ -250,6 +250,7 @@
                                             app:layout_constraintTop_toBottomOf="@id/best_seller_star_1"/>
 
                                         <com.google.android.material.button.MaterialButton
+                                            android:id="@+id/best_seller_button"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:backgroundTint="@color/teal_900"
@@ -411,6 +412,7 @@
                                             android:layout_marginBottom="3dp"/>
 
                                         <com.google.android.material.button.MaterialButton
+                                            android:id="@+id/popular_itemS_button"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:backgroundTint="@color/teal_900"
