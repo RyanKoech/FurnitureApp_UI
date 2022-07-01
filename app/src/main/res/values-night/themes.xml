@@ -19,5 +19,8 @@
         <item name="transparentBtnTextColor">@color/black_500</item>
         <item name="ratingTextColor">@color/black_600</item>
         <item name="bottomNavItemsColor">@color/teal_850</item>
+        <item name="itemCurveBgColor">@color/teal_825</item>
+        <item name="furniColor">@color/teal_700</item>
+        <item name="itemFragmentDescriptionText">@color/black_300</item>
     </style>
 </resources>

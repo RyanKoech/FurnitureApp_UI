@@ -25,7 +25,7 @@
                android:textSize="25sp"
                android:fontFamily="@font/montserrat_regular"
                android:textFontWeight="900"
-               android:textColor="@color/teal_900"
+               android:textColor="?attr/furniColor"
                android:layout_marginLeft="13dp"/>
 
            <View
@@ -140,7 +140,7 @@
                <TextView
                    android:layout_width="250dp"
                    android:layout_height="wrap_content"
-                   android:textColor="@color/black_500"
+                   android:textColor="?attr/itemFragmentDescriptionText"
                    android:textSize="12sp"
                    android:fontFamily="@font/montserrat_semibold"
                    android:textFontWeight="900"
@@ -214,7 +214,7 @@
             android:layout_width="fill_parent"
             android:layout_height="465dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/teal_650"
+            android:backgroundTint="?attr/itemCurveBgColor"
             app:cardElevation="0dp"
             style="@style/CustomCardViewStyle"/>
 

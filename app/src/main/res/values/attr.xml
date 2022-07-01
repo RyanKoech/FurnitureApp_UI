@@ -10,6 +10,9 @@
         <attr name="bottomNavColor" format="color"/>
         <attr name="ratingTextColor" format="color"/>
         <attr name="bottomNavItemsColor" format="color"/>
+        <attr name="itemCurveBgColor" format="color"/>
+        <attr name="furniColor" format="color"/>
+        <attr name="itemFragmentDescriptionText" format="color"/>
 
     </declare-styleable>
     
